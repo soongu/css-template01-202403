@@ -2,7 +2,7 @@
 
 /* header style */
 header {
-  background: rgba(0,0,0, 0.2);
+  background: rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 100px;
   line-height: 100px;
@@ -25,7 +25,6 @@ header .inner-header .logo img {
   width: 100%;
 }
 
-
 header .inner-header .gnb {
   /* border: 3px solid red; */
   float: left;
@@ -46,7 +45,6 @@ header .inner-header .gnb li a {
 header .inner-header .gnb li a:hover {
   color: #ff8342;
 }
-
 
 header .inner-header .tnb {
   /* border: 3px solid blue; */
@@ -81,7 +79,6 @@ header .inner-header .tnb li:last-child i {
 header .inner-header .gnb-mobile {
   display: none;
 }
-
 
 /* section.main style */
 section.main {
@@ -121,7 +118,7 @@ section.main .main-title .view::after {
   content: '';
   width: 0;
   height: 100%;
-  background: rgba(255,255,255, 0.4);
+  background: rgba(255, 255, 255, 0.4);
   position: absolute;
   left: 0;
   top: 0;
@@ -169,7 +166,7 @@ section.about ul.sub-container li {
   height: 510px;
 }
 
-section.about ul.sub-container li a:hover .img-box img  {
+section.about ul.sub-container li a:hover .img-box img {
   transform: scale(1.2);
 }
 section.about ul.sub-container li .img-box {
@@ -262,4 +259,92 @@ section.innovation .img-box .inner .bottom a {
 }
 section.innovation .img-box .inner .bottom a:hover {
   background: #f86010;
+}
+
+/* section.me style */
+section.me {
+  background: url('../img/me.jpg') no-repeat center/cover;
+  padding: 80px 0;
+  margin-bottom: 150px;
+}
+
+section.me ul.list {
+  /* background: orange; */
+  margin-top: 50px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+section.me ul.list > li {
+  /* border: 2px solid red; */
+  padding: 30px 60px;
+}
+
+section.me ul.list > li:first-child {
+  border-bottom: 1px solid #ddd;
+}
+section.me ul.list > li h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  /* background: skyblue; */
+  position: relative;
+}
+section.me ul.list > li h3 span {
+  position: absolute;
+  left: -30px;
+  color: #ff8342;
+}
+section.me ul.list > li p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+section.me ul.list > li .more {
+  font-size: 16px;
+  font-weight: 700;
+}
+section.me ul.list > li .more span {
+  color: #ff8342;
+  font-size: 14px;
+  margin-left: 3px;
+}
+
+section.me ul.list ul.in {
+  /* background: violet; */
+  margin-bottom: 30px;
+}
+
+section.me ul.list ul.in li em {
+  /* background: tomato; */
+  float: left;
+  width: 12%;
+  margin-top: 3px;
+  font-weight: 700;
+}
+section.me ul.list ul.in li p {
+  /* background: dodgerblue; */
+  float: left;
+  position: relative;
+}
+
+section.me ul.list ul.in li p::before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #ff8342;
+  position: absolute;
+  left: -40px;
+  top: 10px;
+}
+
+#incruit-btn {
+  width: 280px;
+  background: #ff8342;
+  color: #fff;
+  padding: 10px 0;
+  border-radius: 50px;
+  font-weight: 700;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto 0;
 }
