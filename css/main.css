@@ -348,3 +348,138 @@ section.me ul.list ul.in li p::before {
   display: block;
   margin: 20px auto 0;
 }
+
+/* section sns style */
+section.sns {
+  margin-bottom: 60px;
+}
+
+section.sns ul {
+  margin: 50px auto;
+}
+
+section.sns ul li {
+  /* border: 3px solid #000; */
+  width: 32%;
+  float: left;
+  margin-right: 2%;
+}
+section.sns ul li:last-child {
+  margin-right: 0;
+}
+
+section.sns ul li .img-box {
+  height: 225px;
+  /* border: 2px solid blue; */
+  overflow: hidden;
+  position: relative;
+}
+
+section.sns ul li .img-box img {
+  width: 100%;
+  /* opacity: 0.4; */
+}
+
+section.sns ul li .img-box::before {
+  content: '';
+  width: 0;
+  height: 100%;
+  background: rgba(255, 131, 66, 0.75);
+  position: absolute;
+  z-index: 10;
+  transition: 0.5s;
+}
+section.sns ul li a:hover .img-box::before {
+  width: 100%;
+}
+
+section.sns ul li .img-box::after {
+  content: 'BLOG';
+  font-size: 15px;
+  font-family: 'Exo 2', sans-serif;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  color: #fff;
+  padding: 5px 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 500;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.7s;
+}
+section.sns ul li a:hover .img-box::after {
+  opacity: 1;
+}
+
+
+section.sns ul li .bottom {
+  padding: 20px 0 20px 30px;
+  box-sizing: border-box;
+}
+section.sns ul li .bottom p {
+  font-size: 18px;
+}
+section.sns ul li .bottom p.color {
+  color: #ff8342;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+section.sns ul li .bottom p.time {
+  color: #999;
+  font-size: 14px;
+  margin-top: 30px;
+}
+section.sns ul li .bottom p.time i {
+  margin-right: 5px;
+  font-size: 0.9em;
+}
+
+
+/* footer style */
+footer {
+  border-top: 1px solid #999;
+  padding: 30px 0;
+}
+footer .inner {
+  width: 84%;
+  margin: 0 auto;
+}
+footer .inner .ft-logo {
+  float: left;
+  width: 14%;
+}
+footer .inner .ft-logo img {
+  width: 100%;
+}
+footer .inner .address {
+  float: left;
+  margin-left: 100px;
+  margin-top: 35px;
+}
+footer .inner .address li:first-child {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+footer .inner .address li:last-child {
+  color: #999;
+}
+
+footer .inner .list {
+  float: right;
+  margin-top: 40px;
+}
+footer .inner .list li {
+  float: left;
+  margin-left: 80px;
+}
+footer .inner .list li:last-child {
+  font-weight: 700;
+}
+footer .inner .list li a:hover {
+  color: #ff8342;
+  text-decoration: underline;
+}
+
+
